@@ -48,6 +48,7 @@ resources:
 
 service:
   type: LoadBalancer
+  port: 443
   loadBalancerIP: ""
 
 ## Mount prometheus scrape config https://www.percona.com/blog/2020/03/23/extending-pmm-prometheus-configuration/
@@ -59,3 +60,17 @@ prometheus:
 statefulSet:
   annotations: {}
   labels: {}
+
+## Kubernetes Ingress https://kubernetes.io/docs/concepts/services-networking/ingress
+ingress:
+  enabled: false
+  annotations: {}
+    # kubernetes.io/ingress.class: nginx
+    # kubernetes.io/tls-acme: "true"
+  path: /
+  pathType: Prefix
+  host: monitoring-service.example.local
+  tls: []
+  #  - secretName: pmm-server-tls
+  #    hosts:
+  #      - monitoring-service.example.local
