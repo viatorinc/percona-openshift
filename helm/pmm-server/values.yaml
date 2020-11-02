@@ -60,6 +60,10 @@ prometheus:
 statefulSet:
   annotations: {}
   labels: {}
+  ## Set Pod Labels and Annotations
+  podTemplate:
+    annotations: {}
+    labels: {}
 
 ## Kubernetes Ingress https://kubernetes.io/docs/concepts/services-networking/ingress
 ingress:
@@ -74,7 +78,4 @@ ingress:
   #  - secretName: pmm-server-tls
   #    hosts:
   #      - monitoring-service.example.local
-## Set Pod Labels and Annotations
-podTemplate:
-  annotations: {}
-  labels: {}
+
