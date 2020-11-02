@@ -48,12 +48,12 @@ The following tables lists the configurable parameters of the Percona chart and 
 | `prometheus.configMap.name`   | Name of k8s configMap with scrape_configs    | ""                                                         |
 | `statefulSet.labels`       | Additional labels for the statefulset    | ""                                                    |
 | `statefulSet.annotations`  | Annotations for the statefulset     | ""                                                         |
-| `ingress.enabled`          | Enable the [Kubernetes Ingress type](https://kubernetes.io/docs/concepts/services-networking/ingress/#the-ingress-resource) | ""                                                         |
+| `ingress.enabled`          | Enable the [Kubernetes Ingress type](https://v1-18.docs.kubernetes.io/docs/concepts/services-networking/ingress/#the-ingress-resource) | ""                                                         |
 | `ingress.annotations`      | Ingress Annotations  | `false`                                                         |
 | `ingress.path`             | Ingress Path         | `/`                                                         |
-| `ingress.pathType`         | Ingress Path Type [Kubernetes Ingress PathType](https://kubernetes.io/docs/concepts/services-networking/ingress/#path-types)   | `Prefix`                                                         |
+| `ingress.pathType`         | Ingress Path Type [Kubernetes Ingress PathType](https://v1-18.docs.kubernetes.io/docs/concepts/services-networking/ingress/#path-types)   | `Prefix`                                                         |
 | `ingress.host`             | Ingress Host   | `monitoring-service.example.local`                                                         |
-| `ingress.tls`              | Configure Ingress TLS options [Kubernetes Ingress TLS](https://kubernetes.io/docs/concepts/services-networking/ingress/#tls)   | ""                                                         |
+| `ingress.tls`              | Configure Ingress TLS options [Kubernetes Ingress TLS](https://v1-18.docs.kubernetes.io/docs/concepts/services-networking/ingress/#tls)   | ""                                                         |
 | `ingress.labels`           | Ingress Labels   | ""                                                         |
 | `podTemplate.labels`       | Additional labels to be passed to the underlying Pod    | ""                                                    |
 | `podTemplate.annotations`  | Annotations for the Pod     | ""                                                         |
