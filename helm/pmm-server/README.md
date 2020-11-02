@@ -55,6 +55,8 @@ The following tables lists the configurable parameters of the Percona chart and 
 | `ingress.host`             | Ingress Host   | `monitoring-service.example.local`                                                         |
 | `ingress.tls`              | Configure Ingress TLS options [Kubernetes Ingress TLS](https://kubernetes.io/docs/concepts/services-networking/ingress/#tls)   | ""                                                         |
 | `ingress.labels`           | Ingress Labels   | ""                                                         |
+| `podTemplate.labels`       | Additional labels to be passed to the underlying Pod    | ""                                                    |
+| `podTemplate.annotations`  | Annotations for the Pod     | ""                                                         |
 
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. 

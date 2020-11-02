@@ -74,3 +74,7 @@ ingress:
   #  - secretName: pmm-server-tls
   #    hosts:
   #      - monitoring-service.example.local
+## Set Pod Labels and Annotations
+podTemplate:
+  annotations: {}
+  labels: {}
